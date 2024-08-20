@@ -100,8 +100,8 @@ st.sidebar.markdown("#### Annual Rainfall (mm)")
 rainfall = st.sidebar.number_input('☔ वार्षिक वर्षा (मिलीमीटर में)', min_value=0.0, step=0.1, key='rainfall')
 
 # Production
-st.sidebar.markdown("#### Production (in metric tons)")
-production = st.sidebar.number_input('🏭 वार्षिक उत्पादन (मीट्रिकटन में)', min_value=0.0, step=1.0, key='production')
+st.sidebar.markdown("#### Production (in tons)")
+production = st.sidebar.number_input('🏭 वार्षिक उत्पादन (टन में)', min_value=0.0, step=1.0, key='production')
 
 # Prediction button with animation
 if st.button('🌟 Predict Yield (production per unit area) | फसल का अनुमान लगाएँ'):
@@ -128,7 +128,7 @@ if st.button('🌟 Predict Yield (production per unit area) | फसल का �
     result_html = f"""
     <hr>
     <div style='background-color: rgba(0, 71, 152, 0.8); padding: 10px; border-radius: 10px; text-align: center;'>
-      <h4 style='color: white;'>🌿 Predicted crop yield = <strong>{round(predicted_yield, 2)} Metric Tonnes/Hectares</strong></h4>
+      <h4 style='color: white;'>🌿 Predicted crop yield = <strong>{round(predicted_yield, 2)} Tons/Hectares</strong></h4>
       <p style='color: white;'>आपकी मेहनत का फल: प्रति हेक्टेयर अनुमानित उपज</p>
     </div>
     """
